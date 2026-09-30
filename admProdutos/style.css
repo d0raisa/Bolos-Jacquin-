@@ -1,16 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --corPrincipal: #FFF4F4;
     --fontHanken: "Hanken Grotesk", sans-serif;
     --CorDourado: #C5A028;
+
+    --corSecundaria: #fdf8f8;
 }
 
-.container{
+.container {
     width: 95%;
     max-width: 1200px;
     margin: auto;
@@ -26,23 +28,23 @@ h1 {
 }
 
 
-header{
+header {
     background-color: var(--corPrincipal);
     font-family: var(--fontHanken);
 }
 
-.header_container{
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 120px;
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
 }
 
-.box_busca{
-   position: relative; 
+.box_busca {
+    position: relative;
 }
 
-.box_busca svg{
+.box_busca svg {
     width: 20px;
     position: absolute;
     fill: #747878;
@@ -50,45 +52,45 @@ height: 120px;
 }
 
 .box_busca input {
-padding-left: 25px;
-padding-bottom: 5px;
-background-color: transparent;
-border: none;
-border-bottom: solid 1px #747878;
-font-size: 20px;
+    padding-left: 25px;
+    padding-bottom: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px #747878;
+    font-size: 20px;
 }
 
-.box_busca input :focus{
+.box_busca input :focus {
     outline: none;
 }
 
-.link_inicio{
-color: #CCCCCC;
-text-decoration: none;
-font-size: 20px;
-position: relative;
-text-align: center;
+.link_inicio {
+    color: #CCCCCC;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
 }
 
-.link_inicio span{
-color: #444444;
-position: absolute;
-left: -5px;
-top: 8px;
+.link_inicio span {
+    color: #444444;
+    position: absolute;
+    left: -5px;
+    top: 8px;
 
 }
 
-.link_inicio hr{
+.link_inicio hr {
     margin-top: 7px;
     width: 100px;
-    background-color: var(--CorDourado) ;
+    background-color: var(--CorDourado);
     border: none;
     height: 1px;
 }
 
 /* -----------botão menu-------- */
 
-.header_container button{
+.header_container button {
     background-color: transparent;
     border: none;
     display: none;
@@ -96,22 +98,22 @@ top: 8px;
 
 
 
-.header_container button svg{
+.header_container button svg {
     width: 45px;
 
 }
 
 /* -----------SEÇÃO CADASTRO DE PRODUTOS-------- */
 
-.cad_container{
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 100px 0;
+.cad_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
 
 }
 
-.icon_jacquin{
+.icon_jacquin {
 
     width: 200px;
 }
@@ -160,40 +162,35 @@ padding: 100px 0;
 }
 
 
-
-
 /* -----------formulario-------- */
 
-form{
+form {
 
-/* background-color: aquamarine; */
-width: 100%;
+    /* background-color: aquamarine; */
+    width: 100%;
 }
 
-.inputs_form{
-display: flex;
-justify-content: space-around;
-width: 100%;
-max-width: 1200px;
-
-}
-
-.lf_coluna{
-display: flex;
-flex-direction: column;
+.inputs_form {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
 
 }
 
-.lf_linha{
+.lf_coluna {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.lf_linha {
     display: flex;
 }
 
 
-
-
-
-.input_img svg{
-width: 23px;
+.input_img svg {
+    width: 23px;
 
 
 }
@@ -201,56 +198,49 @@ width: 23px;
 
 .form_coluna1,
 .form_coluna2{
-
-    width: 414px;
-
+    max-width: 414px;
+    width: 45%;
+   
 }
 
-
-
-
 .input_img span,
-form label{
-
+form label {
     font-family: var(--fontHanken);
     text-transform: uppercase;
     color: #444444;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 00;
     margin-bottom: 8px;
 }
 
 .inputs_form input[type=text],
-.inputs_form textarea{
-
-background-color: transparent;
-border: none;
-border-bottom: solid 1px #444444;
-resize: none;
+.inputs_form textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px #444444;
+    resize: none;
 }
 
 
 .inputs_form input[type=text] :focus,
-.inputs_form textarea :focus{
-outline: none;
+.inputs_form textarea :focus {
+    outline: none;
 
 
 }
 
-
-
-.linha_form{
+.linha_form {
 
     margin-bottom: 10px;
 }
 
-.inputs_form input[type=file]{
-display: none;
+.inputs_form input[type=file] {
+    display: none;
 
 }
 
 
-.input_img label{
+.input_img label {
     /* background-color: blueviolet; */
     display: flex;
     align-items: center;
@@ -259,43 +249,108 @@ display: none;
     border: solid 1px #444444;
 }
 
-.input_img label:hover{
+.input_img label:hover {
     cursor: pointer;
 }
 
 
 
 form input[type=checkbox],
-form input[type=text]{
+form input[type=text] {
     height: 25px;
 }
 
-.input_cat input{
-width: 314px;
-margin-right: 20px;
+.input_cat{
+    width: 79%;
 }
 
-.input_valor input{
+.input_cat input {
+    max-width: 314px;
+    margin-right: 20px;
+}
+
+.input_valor{
+    width: 91%;
+}
+
+
+
+.input_valor input {
 
     margin-right: 20px;
-    width: 360px;
+    max-width: 360px;
 }
 
-form input[type=button]{
-    margin:  100px auto 0;
+form input[type=button] {
+    margin: 100px auto 0;
     display: block;
     font-family: var(--fontHanken);
-border: none;
+    border: none;
     font-size: 12px;
     text-transform: uppercase;
-    color: #FFFFFF;
     text-decoration: none;
     background-color: #000;
-    padding: 16px 40px;
+    font-weight: 600px;
+    color: #FFFFFF;
+    padding: 16px 55px;
+    cursor: pointer;
     letter-spacing: 3px;
-    font-weight: 500px;
+
+}
+
+/* -----------LISTA DE PRODUTOS-------- */
+
+.list_produtos{
+    background-color: var(--corSecundaria);
+}
+
+
+table{
+    background-color: aquamarine;
+    width: 100%;
+    font-family: var(--fontHanken);
+    text-transform: uppercase;
+
+}
+
+thead{
+    font-size: 12px;
+    font-weight: 600;
+    color: #444444;
+}
+
+tbody{
+    color: #AAAAAA;
+
+}
+
+
+
+
+table svg{
+    width: 35px;
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -316,39 +371,49 @@ border: none;
 
 /* -----------midias-------- */
 
-@media screen and (max-width:768px){
-    .header_container button{
+@media screen and (max-width:768px) {
+    .header_container button {
         display: block;
     }
 
     .link_inicio,
-    .box_busca{
+    .box_busca {
         display: none;
     }
-  
-    .box_h2 h2{
+
+    .box_h2 h2 {
         font-size: 32px;
 
 
     }
 
-    .box_h2 span{
+    .box_h2 span {
 
         font-size: 20px;
         bottom: -18;
         margin-bottom: 20px;
     }
 
-    .box_h2 hr{
+    .box_h2 hr {
 
         margin-top: 10px;
         width: 70%;
     }
-    
+
+
+
+
+    /* ---------FORMULARIO---------- */
+    .inputs_form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .form_coluna1,
+    .form_coluna2{
+        max-width: 500px;
+        width: 80%;
+    }
+
 }
-
-    
-
-
 
 
